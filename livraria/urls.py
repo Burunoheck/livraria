@@ -8,8 +8,8 @@ from core.views import CategoriaViewSet, EditoraViewSet, AutorViewSet, LivroView
 router = DefaultRouter()
 router.register(r'categorias', CategoriaViewSet)
 router.register(r'editoras', EditoraViewSet)
-router.register(r'editoras', AutorViewSet)
-router.register(r'editoras', LivroViewSet)
+router.register(r'autores', AutorViewSet)
+router.register(r'livros', LivroViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
